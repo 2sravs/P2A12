@@ -1,0 +1,42 @@
+﻿@model WebAppAssign11.Models.Comment
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Comment</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.content)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.content)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.publicationDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.publicationDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PostId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PostId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
